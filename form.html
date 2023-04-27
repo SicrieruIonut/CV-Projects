@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cerere de angare</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jvs.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cerere de angajare</h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label>Cod cerere (camp ascuns, pre-completat)</label>
+                <input type="text" name="cod" value="12345" readonly>
+                <label>Prenume</label>
+                <input type="text" name="prenume" required>
+                <label>Nume</label>
+                <input type="text" name="nume" required>
+                <label>Adresa de email</label>
+                <input type="email" name="email" required>
+                <label>NR.Telfelon</label>
+                <input type="tel" name="telefon" required>
+                <label>CV</label>
+                <input type="file" name="cv" required>
+                <label>Scrisoare de intentie</label>
+                <textarea name="scrisoare" name="scrisoare" required></textarea>
+                <label>Pozitia pentru care aplicati</label>
+                <select name="pozitie" required>
+                    <option value="" selected disabled>Selectati o pozitie</option>
+                    <option value="Programator">Programator</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Contabil">Contabil</option>
+                    <option value="Marketing Manager">Marketing Manager</option>
+                    <option value="Asistent Medical">Asistent medical</option>
+                </select>
+                <label>Ani de experienta</label>
+                <label><input type="radio" name="experienta" value="<1 an" required>Mai putin de 1 an</label>
+                    <label><input type="radio" name="experienta" value="1-3 an" required>1-3 an</label>
+                        <label><input type="radio" name="experienta" value="3-10 an" required>3-10 an</label>
+                            <label><input type="radio" name="experienta" value=">10 an" required>Mai mult de 10 an</label>
+                <label>Data de incepere disponibila</label>
+                <input type="date" name="data" required>
+                <label>Cum ati auzit despre noi?</label>
+                <label><input type="checkbox" name="auzit[]" value="internet">Internet</label> 
+                <label><input type="checkbox" name="auzit[]" value="prieten">prieten</label>
+                <label><input type="checkbox" name="auzit[]" value="media">media</label>
+                <label><input type="checkbox" name="auzit[]" value="scoala">scoala</label> 
+                <label><input type="checkbox" name="auzit[]" value="altu">altu</label>    
+                <label>Comentarii in plus</label>  
+                <textarea id="skills" name="skills"  rows="4"  cols="50" ></textarea>  
+                <input type="submit" value="Trimite cererea">     
+            </form>
+        </div>
+    </body>
+</HTML>
